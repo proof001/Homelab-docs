@@ -26,7 +26,7 @@ This repository serves as the central hub for documentation, diagrams, and confi
 ## Setup and Usage
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/homelab-docs.git
+   git clone https://github.com/proof001/homelab-docs.git
    ```
 2. **Navigate to Relevant Sections**:
    - Read `/docs/infrastructure.md` for a full overview of the homelab setup.
