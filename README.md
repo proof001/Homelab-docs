@@ -52,6 +52,3 @@ This repository serves as the central hub for documentation, diagrams, and confi
   - Commit changes weekly to keep the repo current.
 - **Backups**:
   - A copy of this repo is mirrored on the Buffalo NAS for redundancy.
-
-## Contact
-For questions or collaboration, open an issue on GitHub or reach out directly via GitHub Discussions.
