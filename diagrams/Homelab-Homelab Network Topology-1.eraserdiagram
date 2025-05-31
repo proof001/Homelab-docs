@@ -1,0 +1,33 @@
+cloud-architecture-diagram
+
+title Homelab Network Topology
+
+// Central network device (circle)
+Ubiquity Gateway [icon: globe, label: "Ubiquity Gateway (Router/Firewall)", shape: circle, color: blue]
+
+// Proxmox Cluster (dashed box)
+Proxmox Cluster [icon: server, label: "Proxmox Cluster", border: dashed, color: gray] {
+  Node 1 [icon: server, label: "Dell OptiPlex Micro - "Node 1", shape": rectangle]
+  Node 2 [icon: server, label: "Dell OptiPlex Micro - "Node 2", shape": rectangle]
+  Node 3 [icon: server, label: "Dell OptiPlex Micro - "Node 3", shape": rectangle]
+}
+
+// Plex Media Server (rectangle)
+Plex Media Server [icon: monitor, label: "Dell Precision 5810 (Plex Media Server)", shape: rectangle, color: orange]
+
+// Buffalo NAS (cylinder)
+Buffalo NAS [icon: database, label: "Buffalo NAS (4TB)", shape: cylinder, color: green]
+
+// Windows Domain/File Server (rectangle)
+Windows Server [icon: server, label: "Dell PowerEdge (Windows Domain/File Server)", shape: rectangle, color: purple]
+
+// Connections (solid lines for network, dashed for direct storage)
+Ubiquity Gateway > Proxmox Cluster
+Ubiquity Gateway > Plex Media Server
+Ubiquity Gateway > Buffalo NAS
+Ubiquity Gateway > Windows Server
+
+Windows Server > Buffalo NAS
+
+Plex Media Server -- Buffalo NAS: direct media storage
+
